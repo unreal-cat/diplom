@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>CV-Form | Главная</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+                <!-- PERSONAL / PHOTO / CONTACK -->
+                <div class="personal__photo__contack__block">
+                    <div class="personal__details">
+                        <div class="header">
+                            <div class="title">
+                                <div class="block__name">PERSONAL DETAILS</div> 
+                                <div class="company__name">SEAMEN CLOUB</div>
+                            </div>
+                            <div class="icon">
+                                <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                            </div>
+                        </div>
+                        
+                        <div class="header__bottom__line"></div>
+                        <div class="footer__background"></div>
+                        <div class="footer">
+                            <input autocomplete="off" type="text" name="surname" placeholder="SURNAME:" class="input__text">
+                            <div class="input__line"></div>
+
+                            <input autocomplete="off" type="text" name="name" placeholder="FIRST NAME:" class="input__text">
+                            <div class="input__line"></div>
+
+                            <input autocomplete="off" type="text" name="fathers-name" placeholder="FATHER`S NAME:" class="input__text">
+                            <div class="input__line"></div>
+
+                            <input autocomplete="off" type="text" name="date" placeholder="DATE AND PLACE OF BIRTH:" class="input__text">
+                            <div class="input__line"></div>
+                            
+                            <input autocomplete="off" type="text" name="" placeholder="MATERIAL STATUS:" class="input__text">
+                            <div class="input__line"></div>
+                            
+                            <input autocomplete="off" type="text" name="address" placeholder="PERMANENT ADDRESS:" class="input__text">
+                            <div class="input__line"></div>
+                            
+
+                            
+                            <div class="footer__seporator__block">
+                                <div class="footer__seporator__input__block">
+                                    <input autocomplete="off" type="text" name="height" placeholder="HEIGHT (CM):" class="input__text">
+                                    <div class="input__line" style="width: 100%; margin-bottom: 0;"></div>
+                                </div>
+
+                                <div class="footer__seporator__line"></div>
+
+                                <div class="footer__seporator__input__block">
+                                    <input autocomplete="off" type="text" name="weight" placeholder="WEIGHT (KG):" class="input__text">
+                                    <div class="input__line" style="width: 100%; margin-bottom: 0;"></div>
+                                </div>
+                            </div>
+
+                            <div class="footer__seporator__block" style="border: none; margin-top: 0;">
+                                <div class="footer__seporator__input__block">
+                                    <input autocomplete="off" type="text" name="eyes-color" placeholder="EYES COLOR:" class="input__text">
+                                    <div class="input__line" style="width: 100%;"></div>
+                                </div>
+                                <div class="footer__seporator__input__block">
+                                    <input autocomplete="off" type="text" name="hair-color" placeholder="HAIR COLOR:" class="input__text">
+                                    <div class="input__line" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="scaner__button">
+                                <div class="download-container">
+                                    <label class="input-file personal">
+                                        <input type="file" id="file__input personal" name="file">		
+                                        <span>SCAN</span>
+                                    </label>
+                                    <button type="submit" id="upload_button personal" style="display: none;" class="upload-button personal">
+                                        <img src="../static/materials/personalDatails/upload.svg" class="upload-svg">
+                                    </button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="photo__contack__block">
+
+                        <div class="passport__photo">
+                            <div class="passport__photo__upload">
+                                <img src="../static/materials/passportPhoto/passportPhoto.svg" id="passport-photo-svg" class="passport-photo-svg">
+                                <!-- <img src="data:image/png;base64,{{ image_base64 }}" -->
+                                <!-- <input type="file" id="passport__photo__upload" name="photo">
+                                <span>SCAN</span> -->
+                            </div>
+                        </div>
+
+                        <div class="contact__details">
+                            <div class="header">
+                                <div class="title">
+                                    <div class="block__name">CONTACT DETAILS</div> 
+                                    <div class="company__name">SEAMEN CLOUB</div>
+                                </div>
+                                <div class="icon">
+                                    <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                                </div>
+                            </div>
+                            
+                            <div class="header__bottom__line"></div>
+                            <div class="footer__background"></div>
+                            <div class="footer">
+                                <input autocomplete="off" type="text" name="mobile" placeholder="MOBILE:" class="input__text">
+                                <div class="input__line"></div>
+    
+                                <input autocomplete="off" type="text" name="email" placeholder="EMAIL ADDRESS:" class="input__text">
+                                <div class="input__line"></div>
+
+                                <div class="scaner__button">
+                                    <div class="download-container">
+                                        <label class="input-file">
+                                            <input autocomplete="off" type="file" id="file__input" name="file">		
+                                            <span>SCAN</span>
+                                        </label>
+                                        <button type="submit" id="upload_button" style="display: none;" class="upload-button">
+                                            <img src="../static/materials/personalDatails/upload.svg" class="upload-svg">
+                                        </button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEXT OF KIN -->
+                <div class="next__of__kin__block">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">NEXT OF KIN</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="next-name" placeholder="NEXT OF KIN:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="next-mobile" placeholder="PHONE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="next-reality" placeholder="RELATIONSHIP:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="next-address" style="width: 200px;" placeholder="ADDRESS:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="add__next__of__kin__inputs__button" id="add__next__of__kin__inputs__button">+</div>
+                        
+                    </div>
+
+                </div>
+                
+                <!-- TRAVEL PASSPORTS -->
+                <div class="travel__passport__details">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">TRAVEL PASSPORT DETAILS</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="travel-document-type" placeholder="DOCUMENT:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="travel-number" placeholder="NUMBER:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="travel-country" placeholder="PLACE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="travel-issued" placeholder="ISSUED:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="travel-valid" placeholder="VALID:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="scaner__button">
+                            <div class="download-container">
+                                <label class="input-file travel">
+                                    <input type="file" id="file__input travel" name="file">		
+                                    <span>SCAN</span>
+                                </label>
+                                <button type="submit" id="upload_button travel" style="display: none;" class="upload-button travel">
+                                    <img src="../static/materials/personalDatails/upload.svg" class="upload-svg">
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="page_line"></div>
+
+                <!-- SEAMANS BOOK DETAILS -->
+                <div class="travel__passport__details" style="height: 330px;">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">SEAMANS BOOK DETAILS</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background" style="height: 227px;"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-document-type-1" placeholder="DOCUMENT:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-dqk-code-1" placeholder="DQK NUMBER:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-country-1" placeholder="PLACE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-issued-1" placeholder="ISSUED:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-valid-1" placeholder="VALID:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-document-type-2" placeholder="DOCUMENT:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-number-2" placeholder="AZE NUMBER:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-country-2" placeholder="PLACE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-issued-2" placeholder="ISSUED:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="seamans-valid-2" placeholder="VALID:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+                        <div class="scaner__button">
+                            <div class="download-container">
+                                <label class="input-file seamans">
+                                    <input type="file" id="file__input seamans" name="file">		
+                                    <span>SCAN</span>
+                                </label>
+                                <button type="submit" id="upload_button seamans" style="display: none;" class="upload-button seamans">
+                                    <img src="../static/materials/personalDatails/upload.svg" class="upload-svg">
+                                </button> 
+                                
+                                <div class="form_toggle">
+                                    <div class="form_toggle-item item-1">
+                                        <input id="fid-1" type="radio" name="radio" value="off" >
+                                        <label for="fid-1">AZE</label>
+                                    </div>
+                                    <div class="form_toggle-item item-2">
+                                        <input id="fid-2" type="radio" name="radio" value="on" checked>
+                                        <label for="fid-2">AA</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                 <!-- EDUCATION -->
+                 <div class="travel__passport__details" style="height: 210px;">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">EDUCATION</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background" style="height: 107px;"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 225px;">
+                                <input autocomplete="off" type="text" name="education-school" placeholder="FULL NAME OF SCHOOL:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="education-issue" placeholder="PLACE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="education-class" placeholder="GRADE/CLASS:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="education-from" placeholder="FROM:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="education-to" placeholder="TO:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- KNOWLEDGE OF LANGUAGE -->
+                <div class="travel__passport__details" style="height: 250px;">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">KNOWLEDGE OF LANGUAGE</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background" style="height: 147px;"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-language-1" placeholder="LANGUAGE:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-speaking-1" placeholder="SPEAKING:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-reading-1" placeholder="READING:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-writing-1" placeholder="WRITING:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-language-2" placeholder="LANGUAGE:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-speaking-2" placeholder="SPEAKING:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-reading-2" placeholder="READING:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="language-writing-2" placeholder="WRITING:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- MEDICAL INFORMATION -->
+                <div class="travel__passport__details" style="height: 210px;">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">MEDICAL INFORMATION</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background"  style="height: 107px;"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="medical-document" placeholder="DOCUMENT:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="medical-grade" placeholder="GRADE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="medical-place-issue" placeholder="PLACE OF ISSUE" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="medical-date-issue" placeholder="DATE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block">
+                                <input autocomplete="off" type="text" name="medical-expiry" placeholder="DATE OF EXPIRY:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>                
+
+                <!-- CERTIFICATE OF COMPETENCY -->
+                <div class="travel__passport__details" style="height: 210px;">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">CERTIFICATE OF COMPETENCY</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background" style="height: 107px;"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 110px;">
+                                <input autocomplete="off" type="text" name="certificate-grade" placeholder="GRADE/CLASS:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 140px;">
+                                <input autocomplete="off" type="text" name="certificate-country" placeholder="ISSUING COUNTRY:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="certificate-certificate" placeholder="CERTIFICATE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 130px;">
+                                <input autocomplete="off" type="text" name="certificate-date-issued" placeholder="DATE OF ISSUED:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="certificate-expires" placeholder="EXPIRES:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 150px;">
+                                <input autocomplete="off" type="text" name="certificate-details" placeholder="DETAILS OF LIMITATIONS:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>                
+
+                <div class="page_line"></div>
+
+                <!-- STCW AND OTHER CERTIFICATES -->
+                <div class="travel__passport__details" style="height: 480px;">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">STCW AND OTHER CERTIFICATES</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background" style="height: 377px;"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 190px;">
+                                <input autocomplete="off" type="text" name="" placeholder="NAME OF CURSE/CERTIFICATE:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="" placeholder="INSTITUTE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="PLACE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 90px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="RANK:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="CERT/NO:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 150px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF EXPIRY" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 190px;">
+                                <input autocomplete="off" type="text" name="" placeholder="NAME OF CURSE/CERTIFICATE:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="" placeholder="INSTITUTE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="PLACE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 90px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="RANK:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="CERT/NO:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 150px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF EXPIRY" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 190px;">
+                                <input autocomplete="off" type="text" name="" placeholder="NAME OF CURSE/CERTIFICATE:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="" placeholder="INSTITUTE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="PLACE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 90px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="RANK:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="CERT/NO:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 150px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF EXPIRY" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 190px;">
+                                <input autocomplete="off" type="text" name="" placeholder="NAME OF CURSE/CERTIFICATE:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="" placeholder="INSTITUTE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="PLACE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 90px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="RANK:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="CERT/NO:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 150px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF EXPIRY" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 190px;">
+                                <input autocomplete="off" type="text" name="" placeholder="NAME OF CURSE/CERTIFICATE:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="" placeholder="INSTITUTE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="PLACE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 90px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF ISSUE:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="RANK:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 60px;">
+                                <input autocomplete="off" type="text" name="" placeholder="CERT/NO:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 150px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DATE OF EXPIRY" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="scaner__button">
+                            <div class="download-container">
+                                <label class="input-file travel">
+                                    <input type="file" id="file__input travel" name="file">		
+                                    <span>SEARCH</span>
+                                </label>
+                                <button type="submit" id="upload_button travel" style="display: none;" class="upload-button travel">
+                                    <img src="../static/materials/personalDatails/upload.svg" class="upload-svg">
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>                  
+
+                <!-- SEA EXPERIENCE (LAST 5 YEARS – MOST RECENT EXPERIENCE ON TP LINE) -->
+                <div class="travel__passport__details">
+
+                    <div class="header">
+                        <div class="title">
+                            <div class="block__name">SEA EXPERIENCE (LAST 5 YEARS – TP LINE)</div> 
+                            <div class="company__name">SEAMEN CLOUB</div>
+                        </div>
+                        <div class="icon">
+                            <img class="azerbaijan-svg" src="../static/materials/azerbaijan.svg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom__line"></div>
+                    <div class="footer__background"></div>
+                    <div class="footer">
+                        <div class="next__of__kin__main__inputs__block">
+                            <div class="next__of__kin__lit__inputs__block" style="width: 10f0px;">
+                                <input autocomplete="off" type="text" name="" placeholder="VESSEL:" class="input__text">
+                                <div class="input__line"></div>
+        
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 100px;">
+                                <input autocomplete="off" type="text" name="" placeholder="COMPANY:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="TYPE OF VESSEL:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="FLAG:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+
+                            <div class="next__of__kin__lit__inputs__block" style="width: 40px;">
+                                <input autocomplete="off" type="text" name="" placeholder="DWT:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 40px;">
+                                <input autocomplete="off" type="text" name="" placeholder="GRT:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="RANK:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="SIGN ON:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                            
+                            <div class="next__of__kin__lit__inputs__block" style="width: 80px;">
+                                <input autocomplete="off" type="text" name="" placeholder="SIGN OFF:" class="input__text">
+                                <div class="input__line"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="scaner__button">
+                            <div class="download-container">
+                                <label class="input-file travel">
+                                    <input type="file" id="file__input travel" name="file">		
+                                    <span>SCAN</span>
+                                </label>
+                                <button type="submit" id="upload_button travel" style="display: none;" class="upload-button travel">
+                                    <img src="../static/materials/personalDatails/upload.svg" class="upload-svg">
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>     
+
+                <div class="end__block">
+                    <div class="save block__style" style="background-color: rgb(255, 255, 255);">
+                       <img src="../static/materials/endBlock/save.svg" class="save_img" alt="">СКАЧАТЬ</img>
+                    </div>
+                    
+                    <div class="password block__style" onclick="password_gen();" style="background-color: rgb(255, 255, 255);">
+                        <img src="../static/materials/endBlock/password.svg" alt="" >
+                        <span id="document-password">ПАРОЛЬ</span>
+                        
+                    </div>
+
+                    <div class="png block__style" onclick="document_png();" id="document_png" style="background-color: rgb(255, 255, 255);" data-value="off">
+                        <img src="../static/materials/endBlock/png.svg" alt="">
+                        <span>PNG</span>
+                    </div>
+
+                    <div class="themes block__style">
+                        <img src="../static/materials/endBlock/theme.svg" alt="">ТЕМЫ</img>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <script src="../static/js/TRAVELDETAILS.js"></script>
+    <script src="../static/js/PERSONALDATAILS.js"></script>
+    <script src="../static/js/NEXTOFKIN.js"></script>
+    <script src="../static/js/SEAMANSBOOK.js"></script>
+    <script src="../static/js/ENDBLOCK.js"></script>
+</body>
+</html>
+

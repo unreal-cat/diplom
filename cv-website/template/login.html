@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>CV-Form | Авторизация</title>
+</head>
+<body style="height: 0;@media screen and (max-width: 600px) {body {width: 80%;}}">
+
+    <div class="main">
+        <div class="container">
+                <!-- PERSONAL / PHOTO / CONTACK -->
+                <div class="personal__photo__contack__block" style="display: flex; justify-content: center; margin-top: 150px;">
+                    
+                    <div class="photo__contack__block">
+                        <div class="contact__details">
+                            <div class="header">
+                                <div class="title">
+                                    <div class="block__name">LOGIN | Авторизация</div> 
+                                    <div class="company__name">SEAMEN CLOUB</div>
+                                </div>
+                                <div class="icon">
+                                    <img class="azerbaijan-svg" src="../static/materials/loginPage/login.svg"/>
+                                </div>
+                            </div>
+                            
+                            <div class="header__bottom__line"></div>
+                            <div class="footer__background"></div>
+                            <div class="footer">
+                                <input autocomplete="off" type="text" name="login" placeholder="ЛОГИН:" class="input__text">
+                                <div class="input__line"></div>
+    
+                                <input autocomplete="off" type="text" name="password" placeholder="ПАРОЛЬ:" class="input__text">
+                                <div class="input__line"></div>
+
+                                <div class="scaner__button">
+                                    <div class="download-container">
+                                        <button type="submit" onclick="send_auth()" id="upload_button" class="button_style">
+                                            {{button_text | safe}}
+                                        </button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="end__block">
+                    <div class="save">
+                       <img src="../static/materials/endBlock/save.svg" class="save_img" alt=""> Скачать
+                    </div>
+                </div> -->
+
+        </div>
+    </div>
+
+    <script src="../static/js/AUTHORIZATION.js"></script>
+</body>
+</html>
