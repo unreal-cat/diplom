@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="1473.37 369.22 88.3096 56.4636" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M1473.37 377.175C1473.37 372.782 1476.93 369.22 1481.33 369.22L1553.73 369.22C1558.12 369.22 1561.68 372.782 1561.68 377.175L1561.68 417.728C1561.68 422.122 1558.12 425.684 1553.73 425.684L1481.33 425.684C1476.93 425.684 1473.37 422.122 1473.37 417.728L1473.37 377.175Z" id="Fill"/>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="56.4636" width="88.3096" x="1473.37" y="369.22"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
+<g opacity="1" vectornator:layerName="Группа 10">
+<use fill="#ffffff" fill-rule="nonzero" opacity="0.836548" stroke="none" vectornator:layerName="Прямоугольник 3" xlink:href="#Fill"/>
+<clipPath clip-rule="nonzero" id="ClipPath">
+<use xlink:href="#Fill"/>
+</clipPath>
+<g clip-path="url(#ClipPath)">
+<g opacity="1" vectornator:layerName="Azerbaijan">
+<path d="M1473.37 369.22L1561.68 369.22L1561.68 425.684L1473.37 425.684L1473.37 369.22Z" fill="#43a047" fill-rule="nonzero" opacity="0.836548" stroke="none" vectornator:layerName="path"/>
+<path d="M1473.37 369.22L1561.68 369.22L1561.68 406.863L1473.37 406.863L1473.37 369.22Z" fill="#ff3d00" fill-rule="nonzero" opacity="0.836548" stroke="none" vectornator:layerName="path"/>
+<path d="M1473.37 369.22L1561.68 369.22L1561.68 388.041L1473.37 388.041L1473.37 369.22Z" fill="#03a9f4" fill-rule="nonzero" opacity="0.836548" stroke="none" vectornator:layerName="path"/>
+<path d="M1515.59 389.923C1511.15 389.923 1507.56 393.294 1507.56 397.452C1507.56 401.61 1511.15 404.98 1515.59 404.98C1520.02 404.98 1523.61 401.61 1523.61 397.452C1523.61 393.294 1520.02 389.923 1515.59 389.923Z" fill="#ffffff" fill-rule="nonzero" opacity="0.836548" stroke="none" vectornator:layerName="path"/>
+<path d="M1517.37 391.179C1513.67 391.179 1510.68 393.987 1510.68 397.452C1510.68 400.916 1513.67 403.725 1517.37 403.725C1521.06 403.725 1524.06 400.916 1524.06 397.452C1524.06 393.987 1521.06 391.179 1517.37 391.179Z" fill="#ff3d00" fill-rule="nonzero" opacity="0.836548" stroke="none" vectornator:layerName="path"/>
+<path d="M1525.11 393.27L1525.96 395.521L1528.26 394.495L1527.17 396.652L1529.57 397.452L1527.17 398.252L1528.26 400.409L1525.96 399.383L1525.11 401.634L1524.26 399.383L1521.96 400.409L1523.05 398.252L1520.65 397.452L1523.05 396.652L1521.96 394.495L1524.26 395.521L1525.11 393.27Z" fill="#ffffff" fill-rule="nonzero" opacity="0.836548" stroke="none" vectornator:layerName="path"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
