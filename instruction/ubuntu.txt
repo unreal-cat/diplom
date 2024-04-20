@@ -1,0 +1,40 @@
+————————— ERROR:
+-bash: pip: command not found
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+apt-get install python3-pip
+
+
+
+————————— ERROR:
+Building wheels for collected packages: dlib, PassportEye, pdfminer
+  Building wheel for dlib (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Building wheel for dlib (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [6 lines of output]
+      running bdist_wheel
+      running build
+      running build_ext
+      
+      ERROR: CMake must be installed to build dlib
+      
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for dlib
+  Building wheel for PassportEye (setup.py) ... done
+  Created wheel for PassportEye: filename=PassportEye-2.2.1-py3-none-any.whl size=29614 sha256=e40f09e444949a415a8a9033a8556218cd6ad2a668c4310bbcfff7b5b201d7c6
+  Stored in directory: /root/.cache/pip/wheels/77/4b/01/d43db9410eef3e79a211a78f7ccb04af864a97b61aeee0bf88
+  Building wheel for pdfminer (setup.py) ... done
+  Created wheel for pdfminer: filename=pdfminer-20191125-py3-none-any.whl size=6140120 sha256=73fec434583ca12dc0119423686f8945aa7b64ba38c3dfbc0e272d1cba503629
+  Stored in directory: /root/.cache/pip/wheels/4e/c1/68/f7bd0a8f514661f76b5cbe3b5f76e0033d79f1296012cbbf72
+Successfully built PassportEye pdfminer
+Failed to build dlib
+ERROR: Could not build wheels for dlib, which is required to install pyproject.toml-based projects
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+sudo apt-get update
+sudo apt-get install cmake
+
+
+
